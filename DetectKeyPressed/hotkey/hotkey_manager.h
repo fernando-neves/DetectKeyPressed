@@ -52,7 +52,7 @@ private:
 		HWND hWnd = GetForegroundWindow();
 		DWORD dwProcessId;
 		GetWindowThreadProcessId(hWnd, &dwProcessId);
-		return;
+		return dwProcessId;
 	}
 
 	DWORD runner_thread(
